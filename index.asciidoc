@@ -25,7 +25,7 @@ Inputs to EVM include the genome sequence, gene predictions and alignment data i
 Obtaining and Installing EVM
 -----------------------------
 
-Download EVM at the http://sourceforge.net/projects/evidencemodeler[EVM-sourceforge-download].  
+Download EVM https://github.com/EVidenceModeler/EVidenceModeler/releases[EVM-GitHub-download].  
 After downloading the software, untar-gunzip at its permanent location, ie. /usr/local/bin  This location will be referred to below as $EVM_HOME.
 
 - To fully leverage high quality transcript alignments, you should download and install http://pasa.sf.net[PASA]
@@ -221,7 +221,7 @@ Haas et al. Automated eukaryotic gene structure annotation using EVidenceModeler
 Email Lists
 -----------
 
-- https://lists.sourceforge.net/lists/listinfo/evidencemodeler-users[evidencemodeler-users@lists.sf.net] for assistance and subscribe for announcements of new releases.
+- Visit and use our Google group: https://groups.google.com/forum/\#!forum/evidencemodeler-users[https://groups.google.com/forum/#!forum/evidencemodeler-users] for assistance and subscribe for announcements of new releases.
 
 
 
