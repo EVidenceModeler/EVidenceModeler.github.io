@@ -759,12 +759,17 @@ asciidoc.install();
 </li>
 <li>
 <p>
-<a href="#Running_EVM">Running EVM</a>
+<a href="#Preparing_inputs">Preparing Inputs to EVM</a>
 </p>
 </li>
 <li>
 <p>
-<a href="#Preparing_inputs">Preparing Inputs to EVM</a>
+<a href="#Incorp_RNASEQ">Incorporating RNA-Seq data</a>
+</p>
+</li>
+<li>
+<p>
+<a href="#Running_EVM">Running EVM</a>
 </p>
 </li>
 <li>
@@ -905,6 +910,12 @@ Contig1 nap-nr_minus_rice.fasta nucleotide_to_protein_match     7635    7786    
 </div>
 </div>
 <div class="sect1">
+<h2 id="Incorp_RNASEQ">Incorporating RNA-Seq data</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>If you have RNA-Seq data and have reconstructed transcripts using a method such as <a href="http://cole-trapnell-lab.github.io/cufflinks/">Cufflinks</a> or <a href="http://pasapipeline.github.io">PASA</a>, you can use <a href="http://transdecoder.github.io">TransDecoder</a> to identify likely coding regions and to prepare a GFF3 file corresponding to the corresponding protein-coding gene structures.  This GFF3 file (with the genome as the reference coordinate system) should be provided to EVM as the evidence type <em>OTHER_PREDICTION</em>.</p></div>
+</div>
+</div>
+<div class="sect1">
 <h2 id="Running_EVM">Running EVM</h2>
 <div class="sectionbody">
 <div class="paragraph"><p>Now that you have generated all the required inputs to EVM, you are ready to execute the system.  Running EVM involves the following steps: partitioning the inputs into smaller data sets, creating a series of commands to execute (for grid or local execution), executing EVM on each of the partitioned data sets, and finally combining the outputs.  Each of these steps is described below.</p></div>
@@ -1008,7 +1019,7 @@ Visit and use our Google group: <a href="https://groups.google.com/forum/#!forum
 <div id="footnotes"><hr /></div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2015-07-03 11:36:35 EDT
+Last updated 2015-08-09 09:13:44 EDT
 </div>
 </div>
 </body>

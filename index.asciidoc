@@ -8,8 +8,10 @@ Contents
 
 - <<A_intro, Introduction to EVM>>
 - <<Obtaining_EVM, Obtaining and Installing EVM>>
-- <<Running_EVM, Running EVM>>
 - <<Preparing_inputs, Preparing Inputs to EVM>>
+- <<Incorp_RNASEQ, Incorporating RNA-Seq data>>
+- <<Running_EVM, Running EVM>>
+
 - <<Referencing_EVM, Referencing EVM>>
 - <<Email_Lists, Email lists>>
 
@@ -126,6 +128,15 @@ Alignments (EST or protein) provided to EVM should be spliced alignments, and no
 
 
 A simple example is provided with the EVM distribution.  Larger data sets are provided on the download page.
+
+
+
+
+[[Incorp_RNASEQ]]
+Incorporating RNA-Seq data
+--------------------------
+
+If you have RNA-Seq data and have reconstructed transcripts using a method such as http://cole-trapnell-lab.github.io/cufflinks/[Cufflinks] or http://pasapipeline.github.io[PASA], you can use http://transdecoder.github.io[TransDecoder] to identify likely coding regions and to prepare a GFF3 file corresponding to the corresponding protein-coding gene structures.  This GFF3 file (with the genome as the reference coordinate system) should be provided to EVM as the evidence type 'OTHER_PREDICTION'.
 
 
 [[Running_EVM]]
