@@ -222,6 +222,12 @@ This output is found as the *evm.out* (*--output_file_name* value above) in each
 After running the above script, an *evm.out.gff3* file will exist in each of the contig directories.
 
 
+You can combine these gff3 files into a single output file like so:
+
+     find . -regex ".*evm.out.gff3" -exec cat {} \; > EVM.all.gff3
+
+
+
 [[Referencing_EVM]]
 Referencing EVM
 ---------------

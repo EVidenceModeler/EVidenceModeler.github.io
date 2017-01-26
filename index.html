@@ -994,6 +994,11 @@ Contig1 nap-nr_minus_rice.fasta nucleotide_to_protein_match     7635    7786    
 <pre><code>$EVM_HOME/EvmUtils/convert_EVM_outputs_to_GFF3.pl  --partitions partitions_list.out --output evm.out  --genome genome.fasta</code></pre>
 </div></div>
 <div class="paragraph"><p>After running the above script, an <strong>evm.out.gff3</strong> file will exist in each of the contig directories.</p></div>
+<div class="paragraph"><p>You can combine these gff3 files into a single output file like so:</p></div>
+<div class="literalblock">
+<div class="content">
+<pre><code>find . -regex ".*evm.out.gff3" -exec cat {} \; &gt; EVM.all.gff3</code></pre>
+</div></div>
 </div>
 </div>
 </div>
@@ -1019,7 +1024,7 @@ Visit and use our Google group: <a href="https://groups.google.com/forum/#!forum
 <div id="footnotes"><hr /></div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2015-08-09 09:13:44 EDT
+Last updated 2017-01-26 06:36:58 EST
 </div>
 </div>
 </body>
